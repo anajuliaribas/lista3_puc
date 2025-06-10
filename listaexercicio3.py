@@ -18,10 +18,6 @@ Os dados do arquivo `projetos.csv` se referem aos valores futuros previstos para
 1) Nesta etapa, faça o carregamento dos dados e apresente a df completa. (Peso: 1,0)
 """
 
-pandas
-
-streamlit
-
 import streamlit as st
 st.set_page_config(
     page_title="Lista de exercícios 3",
@@ -29,7 +25,7 @@ st.set_page_config(
 )
 st.header("Lista de exercícios 3")
 
-import pandas as pd
+
 
 df = pd.read_csv("https://raw.githubusercontent.com/anajuliaribas/lista3_puc/refs/heads/main/listaexercicio3.pyv", sep=';')
 
@@ -81,7 +77,7 @@ for projeto, vp in vp_projetos.items():
 
 """5) Gere um gráfico de dispersão cruzando os dados do `Projeto1` e `Projeto2`, com marcadores verdes e em formato de estrela. (Peso: 2,0)"""
 
-import matplotlib.pyplot as plt
+
 
 plt.figure(figsize=(8,6))
 plt.scatter(df['Projeto1'], df['Projeto2'], color='green', marker='*', label='Projeto1 vs Projeto2')
@@ -106,7 +102,7 @@ Dicas:
   - `plt.show()`
 """
 
-import matplotlib.pyplot as plt
+
 dados = {'Projeto1': [305500, 300707],'Projeto2': [425230, 417306],'Projeto3': [656600, 644382], 'Projeto4': [377500, 375514], 'Projeto5': [330677, 329266]}
 
 df['Data'] = pd.to_datetime(dict(year=df["ano"], month=df["mes"], day=1))
