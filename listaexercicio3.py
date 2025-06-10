@@ -31,7 +31,8 @@ st.header("Lista de exercícios 3")
 
 import pandas as pd
 
-df = pd.read_csv("/content/projetos.csv", sep=';')
+df = pd.read_csv("https://raw.githubusercontent.com/anajuliaribas/lista3_puc/refs/heads/main/listaexercicio3.pyv", sep=';')
+
 df = pd.read_csv("/content/projetos.csv", sep=";")
 st.dataframe(df)
 df
